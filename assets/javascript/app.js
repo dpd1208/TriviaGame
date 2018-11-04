@@ -114,8 +114,7 @@
 
         // Function to animate each new question
         function spin() {
-            $("#answer-choices, #question-img-box").addClass("flip");
-            $("#answer-choices, #question-img-box").toggleClass("flipback", "flip");
+            $("#answer-choices, #question-img-box").addClass("slide-up");
         }
 
         // Timer

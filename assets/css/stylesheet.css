@@ -185,19 +185,12 @@ h2#timer {
 }
 
 
-
 /* ANIMATION FOR IMAGES AND ANSWER LISTS */
-
-.flip {
-  animation: flipIt 1s ease-in-out 0s;
-  transition: all .3s ease-in-out;
-  animation-fill-mode: backwards;
-}
-
-.flipback {
-  animation: flipBack 1s ease-in-out 0s;
-  transition: all .3s ease-in-out;
-  animation-fill-mode: backwards;
+.slide-up {
+  height:200px;
+  overflow:hidden;
+  animation: 1.5s slide-up;
+  margin-top:0%;
 }
 
 
@@ -289,23 +282,18 @@ footer p {
   }
 }
 
-@keyframes flipIt {
+@keyframes slide-up {
   from {
-      transform: rotateY(0deg);
+    margin-top: 100%;
+    height: 300%; 
   }
+
   to {
-      transform: rotateY(360deg);
+    margin-top: 0%;
+    height: 100%;
   }
 }
 
-@keyframes flipBack {
-  from {
-      transform: rotateY(360deg);
-  }
-  to {
-      transform: rotateY(0deg);
-  }
-}
 
 
 
