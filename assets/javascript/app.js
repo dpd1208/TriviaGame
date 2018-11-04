@@ -140,7 +140,7 @@
                 if (timer.seconds === 0) {
                     incorrectCount++;
                     $("#" + correctAnswer).addClass("correct");
-                    $("#right-wrong").html("<p>You ran out of time!</p><p>It was <span class='correct-text'>" + correctAnswer + "</span>.</p>");
+                    $("#right-wrong").html("<p>Oh No, Time's Up!</p><p>It was <span class='correct-text'>" + correctAnswer + "</span>.</p>");
                     timer.stop();
                     $("#answer-choices").removeClass("active");
                     $("#question-img-box").html(imgTwo);
