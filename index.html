@@ -8,9 +8,10 @@
     <link href="./assets/css/reset.css" rel="stylesheet" type="text/css" media="screen">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <link href="./assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
-    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -24,7 +25,7 @@
                 <div class="col-12 text-center">
                     <h2>Trivia Game</h2>
                     <p>Click the Pawnee Sign to Begin</p>
-                    <img id="start-game" class="img-fluid splash my-3" src="assets/images/sign.png" alt="Pawnee sign to begin">
+                    <img id="start-game" class="img-fluid splash my-3" src="assets/images/sign.png" alt="Click Pawnee sign to begin">
                     <h2>Play</h2>
                 </div>
             </div>
@@ -33,7 +34,7 @@
             <div class="container middle">
                 <div class="row mt-2">
                     <div class="col-12">
-                        <h2 class="text-center" id="timer">&nbsp;</h2>
+                        <h2 class="text-center" id="timer"></h2>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -52,16 +53,16 @@
                 </div>
                 <div class="row mt-5 pic-row">
                     <div class="col-12">
-                        <div id="pic-field" class="text-center">
+                        <div id="question-img-box" class="text-center">
                             
                         </div>
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-12 text-center" id="answer">
-                        <ul id="answer-list"></ul>
+                        <ul id="answer-choices"></ul>
                     </div>
-                    <div class="col-12 text-center" id="result-holder">
+                    <div class="col-12 text-center" id="result-box">
                     </div>
                 </div>
             </div>
@@ -69,26 +70,20 @@
         <div class="endgame">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center tally mt-3">
+                    <div class="col-12 text-center result-count mt-3">
                         
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center reset mt-1">
-                        <button id="reset-game"><i class="fa fa-repeat"></i>&nbsp; Play again</button>
+                        <button id="reset-game" style="opacity:.75;"><i class="fa fa-repeat"></i> Play again</button>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
-            <p>Daniel Duffy</p>
+            <p>A Game by Daniel Duffy</p>
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

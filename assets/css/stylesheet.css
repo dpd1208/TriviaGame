@@ -10,7 +10,7 @@ body {
   height: 100%;
   position: relative;
   color: #000000;
-  font-family: 'Cutive', serif;
+  font-family: 'Merriweather Sans', sans-serif;
   background: url(../images/mural.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -21,8 +21,8 @@ h1 {
   position: absolute;
   left: 10px;
   bottom: 0;
-  font-family: 'helvetica', sans-serif;
-  font-size: 3rem!important;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3rem;
 }
 
 h2 {
@@ -46,11 +46,13 @@ h2 {
 header img {
   float: none;
   width: 100%;
+  padding: 0 15% 0 15%;
   max-height: 200px;
+  opacity: .75;
 }
 
 .smaller {
-  font-size: 2.5rem!important;
+  font-size: 2.5rem;
 }
 
 
@@ -92,11 +94,12 @@ main {
 img.splash {
   max-width: 200px;
   width: 100%;
+  transition: all .2s ease-in-out;
+  opacity: .75;
 }
 
 img.splash:hover {
-  transform: rotate(7deg);
-  cursor: pointer;
+transform: scale(1.1); 
 }
 
 h2#timer {
@@ -113,7 +116,7 @@ h2#timer {
 }
 
 #right-wrong p {
-  margin-bottom: 5px!important;
+  margin-bottom: 5px;
 }
 
 .correct-text {
@@ -121,35 +124,38 @@ h2#timer {
   font-weight: bold;
 }
 
-#pic-field {
+#question-img-box {
   min-height: 270px;
 }
 
-#pic-field img {
+#question-img-box img {
   max-width: 200px;
   width: 100%;
   border-radius: 15px;
-  border: 5px solid black;
+  border: 3px solid gray;
+  opacity: .8;
 }
 
-#answer-list {
+#answer-choices {
   list-style-type: none;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
-  padding: 0!important;
+  padding: 0;
+  opacity: .75;
 }
 
-.answer-item {
+.answer-choice {
   font-size: .9rem;
   padding: 10px;
   margin-top: 2px;
   margin-bottom: 2px;
-  border: 5px solid black;
+  border: 3px solid gray;
   background-color: white;
+  border-radius: 15px;
 }
 
-.answer-item:hover {
-  background-color: black;
+.answer-choice:hover {
+  background-color: gray;
   color: white;
   cursor: pointer;
   transition: all .2s ease-in-out;
@@ -213,7 +219,7 @@ h2#timer {
   border: 5px solid black;
   border-radius: 8px;
   background: #ffffff;
-  font-family: 'Cutive', serif;
+  font-family:'Merriweather Sans', sans-serif;
 }
 
 #results:hover,
@@ -236,7 +242,7 @@ h2#timer {
   animation-fill-mode: backwards;
 }
 
-.tally img {
+.result-count img {
   max-width: 300px;
   width: 100%;
   border-radius: 15px;
@@ -272,9 +278,7 @@ footer p {
   margin: 0 auto;
 }
 
-
-
-/* ANIMATIONS */
+/* ANIMATIONS (https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) */
 
 @keyframes fadeIn {
   0% {
@@ -321,14 +325,14 @@ footer p {
 
 @media screen and (max-width: 798px) {
   h1 {
-      font-size: 2.5rem!important;
+      font-size: 2.5rem;
   }
   h2 {
-      font-size: 1rem!important;
+      font-size: 1rem;
       line-height: 2rem;
   }
   .smaller {
-      font-size: 2rem!important;
+      font-size: 2rem;
   }
 }
 
@@ -337,16 +341,16 @@ footer p {
 
 @media screen and (max-width: 510px) {
   h1 {
-      font-size: 2rem!important;
+      font-size: 2rem;
   }
   h2 {
-      font-size: 1rem!important;
+      font-size: 1rem;
       line-height: 1.5rem;
   }
   .smaller {
-      font-size: 1.5rem!important;
+      font-size: 1.5rem;
   }
-  .answer-item {
+  .answer-choice {
       font-size: .7rem;
   }
 }
@@ -359,20 +363,20 @@ footer p {
       width: 50%;
   }
   h1 {
-      font-size: 1.5rem!important;
+      font-size: 1.5rem;
   }
   h2 {
-      font-size: .7rem!important;
+      font-size: .7rem;
   }
   .smaller {
-      font-size: 1rem!important;
+      font-size: 1rem;
   }
-  .answer-item {
+  .answer-choice {
       font-size: .6rem;
       padding: 5px 10px;
   }
   .pic-row {
-      margin-top: 2rem!important;
+      margin-top: 2rem;
   }
   #right-wrong p {
       font-size: .8rem;
